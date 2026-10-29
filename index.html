@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zord Studio — Websites for Local Businesses</title>
+<meta name="description" content="Zord Studio designs modern, mobile-friendly websites for salons, gyms, restaurants, clinics, coaching centres and shops in India. Clear pricing, scope agreed upfront.">
+<meta property="og:title" content="Zord Studio — Your Business Deserves a Better Website">
+<meta property="og:description" content="Modern, mobile-friendly websites with clear package pricing and transparent terms.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2317243A'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23B69A62' font-family='Georgia,serif'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F5F1E8;--navy:#17243A;--gold:#B69A62;--white:#FFF;--muted:#68645D;--line:#E2DACE;
+--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--cream);color:var(--navy);font:400 16px/1.65 var(--sans);overflow-x:hidden}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:72px 0}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,7vw,4rem)}h2{font-size:clamp(1.8rem,4.5vw,2.6rem)}h3{font-size:1.3rem}
+p{margin:0 0 1em}.sub{color:var(--muted);max-width:60ch}
+.head{margin-bottom:36px}
+.btn{display:inline-block;font:600 .95rem var(--sans);padding:13px 22px;border-radius:8px;border:1px solid var(--navy);background:var(--navy);color:var(--white);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:#0f1a2b}
+.btn.ghost{background:transparent;color:var(--navy)}.btn.ghost:hover{background:var(--navy);color:var(--white)}
+.btn.block{display:block;text-align:center;width:100%}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(245,241,232,.96);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:600 1.35rem var(--serif);text-decoration:none}.logo span{color:var(--gold)}
+nav ul{display:none;list-style:none;margin:0;padding:0;gap:26px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:not(.btn):hover{color:var(--gold)}
+#menuBtn{display:inline-flex;background:none;border:1px solid var(--line);border-radius:8px;padding:9px 14px;font:600 .9rem var(--sans);color:var(--navy);cursor:pointer}
+nav.open ul{display:flex;flex-direction:column;align-items:stretch;position:absolute;left:0;right:0;top:calc(64px + env(safe-area-inset-top,0px));background:var(--cream);border-bottom:1px solid var(--line);padding:12px 20px 20px;gap:4px}
+nav.open ul a:not(.btn){display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+nav.open .btn{margin-top:10px;text-align:center}
+@media(min-width:860px){#menuBtn{display:none}nav ul{display:flex}}
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .grid{display:grid;gap:44px;align-items:center}
+.hero .lead{font-size:1.1rem;color:var(--muted);max-width:52ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.tag{font:500 1.05rem var(--serif);font-style:italic;border-left:2px solid var(--gold);padding-left:14px;margin:0}
+@media(min-width:900px){.hero .grid{grid-template-columns:1.05fr .95fr}}
+.mock{position:relative;padding:0 0 30px}
+.screen{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(23,36,58,.35)}
+.dots{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.m-body{padding:22px}.m-nav{display:flex;justify-content:space-between;font:600 .75rem var(--serif);margin-bottom:22px}
+.m-nav b{color:var(--gold)}.ln{height:8px;border-radius:4px;background:var(--line);margin:7px 0}
+.m-h{height:16px;width:70%;background:var(--navy);border-radius:4px;margin-bottom:10px}
+.m-btn{display:inline-block;height:26px;width:90px;background:var(--navy);border-radius:5px;margin:10px 8px 18px 0}
+.m-btn.g{background:transparent;border:1px solid var(--gold)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tiles i{height:54px;border-radius:6px;background:var(--cream);border:1px solid var(--line)}
+.phone{position:absolute;right:-6px;bottom:0;width:104px;background:var(--white);border:5px solid var(--navy);border-radius:18px;padding:12px 9px;box-shadow:0 14px 30px -16px rgba(23,36,58,.5)}
+.phone .m-h{height:9px;margin-bottom:8px}.phone .ln{height:5px;margin:5px 0}.phone .m-btn{width:100%;height:18px;margin:8px 0 0}
+/* services */
+.cards{display:grid;gap:18px}
+@media(min-width:640px){.cards.c2,.cards.c4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.cards.c4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:26px}
+.card p{color:var(--muted);margin:0}
+.card h3{padding-top:12px;border-top:2px solid var(--gold);display:inline-block}
+.note{margin-top:24px;color:var(--muted);font-size:.95rem}
+.alt{background:var(--white);border-block:1px solid var(--line)}
+/* pricing */
+.plan{display:flex;flex-direction:column}
+.plan .price{font:500 1.7rem var(--serif);margin:4px 0 0}.plan .unit{font-size:.85rem;color:var(--muted);margin-bottom:12px}
+.plan ul{padding-left:18px;margin:12px 0;color:var(--muted);font-size:.93rem;flex:1}.plan li{margin-bottom:5px}
+.plan h4{margin:12px 0 0;font:600 .85rem var(--sans)}
+.warn{background:var(--cream);border:1px solid var(--gold);border-radius:8px;padding:12px;font-size:.84rem;margin:10px 0;color:var(--navy)}
+.fine{font-size:.82rem;color:var(--muted);margin:0 0 14px!important}
+.mailnote{margin-top:22px;text-align:center;color:var(--muted);font-size:.93rem}
+.care .price{font:500 1.5rem var(--serif);margin:0 0 10px}.care ul{padding-left:18px;color:var(--muted);margin:0;font-size:.93rem}
+/* work */
+.shot{aspect-ratio:16/10;background:var(--cream);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:16px;position:relative}
+.shot .ln:first-child{width:40%;background:var(--navy)}
+.badge{position:absolute;right:10px;bottom:10px;font:600 .72rem var(--sans);background:var(--white);border:1px solid var(--gold);border-radius:20px;padding:3px 10px}
+.tech{font-size:.85rem;color:var(--muted);margin:10px 0 14px}
+.work{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:20px}
+.steps li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--white);display:grid;place-items:center;font:600 .95rem var(--sans)}
+.steps b{display:block;font:500 1.15rem var(--serif)}.steps span{color:var(--muted);font-size:.94rem}
+@media(min-width:900px){.steps{grid-template-columns:repeat(5,1fr)}.steps li{grid-template-columns:1fr}}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.why li{padding:14px 0 0;border-top:2px solid var(--gold);font-weight:500}
+/* faq */
+.faq{max-width:780px}
+.faq h3{margin:0;font-size:1.05rem;font-family:var(--sans);font-weight:600}
+.faq button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:18px 40px 18px 0;font:inherit;color:inherit;cursor:pointer;position:relative}
+.faq button::after{content:"+";position:absolute;right:6px;top:14px;font-size:1.5rem;color:var(--gold);transition:transform .2s}
+.faq button[aria-expanded=true]::after{transform:rotate(45deg)}
+.faq .a{padding:14px 0 6px;color:var(--muted)}.faq .a[hidden]{display:none}
+/* contact */
+.contact{background:var(--navy);color:var(--white)}.contact .sub{color:#d6d1c6}
+.contact .btn{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.contact .btn:hover{background:#c8ad78}
+.clist{list-style:none;padding:0;margin:24px 0}.clist li{margin-bottom:8px}.clist a{color:var(--white);text-underline-offset:4px}
+/* terms/footer */
+.terms h3{font-size:1.1rem;font-family:var(--sans);font-weight:600;margin:22px 0 4px}.terms p{color:var(--muted);margin:0;max-width:75ch}
+footer{background:var(--cream);border-top:1px solid var(--line);padding:44px 0 28px;font-size:.93rem}
+.fg{display:grid;gap:28px}@media(min-width:760px){.fg{grid-template-columns:1.4fr 1fr 1fr}}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin-bottom:6px}footer a{text-underline-offset:3px}
+footer p{color:var(--muted)}
+.copy{border-top:1px solid var(--line);margin-top:26px;padding-top:18px;font-size:.84rem}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top" aria-label="Zord Studio home">Zord<span>.</span>Studio</a>
+<nav id="nav" aria-label="Main">
+<button id="menuBtn" aria-expanded="false" aria-controls="menuList">Menu</button>
+<ul id="menuList">
+<li><a href="#services">Services</a></li><li><a href="#plans">Plans</a></li><li><a href="#work">My Work</a></li><li><a href="#how">How It Works</a></li><li><a href="#contact">Contact</a></li>
+<li><a class="btn" href="#contact">Get a Quote</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap grid">
+<div>
+<h1>Your Business Deserves a Better Website.</h1>
+<p class="lead">Modern, mobile-friendly websites designed to showcase your business, present your services and help customers connect with you.</p>
+<div class="cta"><a class="btn" href="#plans">Explore Plans</a><a class="btn ghost" href="#work">View My Work</a></div>
+<p class="tag">Clear pricing. Practical solutions. Built around your business needs.</p>
+</div>
+<div class="mock" role="img" aria-label="Illustration of a website shown on a laptop and a phone screen">
+<div class="screen"><div class="dots"><i></i><i></i><i></i></div>
+<div class="m-body"><div class="m-nav"><span>Your Business<b>.</b></span><span>Services · Contact</span></div>
+<div class="m-h"></div><div class="m-h" style="width:45%"></div>
+<div class="ln" style="width:80%"></div><div class="ln" style="width:60%"></div>
+<span class="m-btn"></span><span class="m-btn g"></span>
+<div class="tiles"><i></i><i></i><i></i></div></div></div>
+<div class="phone"><div class="m-h"></div><div class="ln"></div><div class="ln" style="width:70%"></div><div class="tiles" style="grid-template-columns:1fr 1fr;gap:5px"><i style="height:26px"></i><i style="height:26px"></i></div><div class="m-btn"></div></div>
+</div>
+</div>
+</section>
+
+<section id="services" class="alt"><div class="wrap">
+<div class="head"><h2>Web Solutions for Growing Businesses</h2></div>
+<div class="cards c4">
+<div class="card"><h3>Business Websites</h3><p>Mobile-friendly websites featuring services, pricing, contact details and WhatsApp links.</p></div>
+<div class="card"><h3>Landing Pages</h3><p>Focused pages with clear content hierarchy and calls to action.</p></div>
+<div class="card"><h3>Website Redesign</h3><p>Improvements to layout, readability, mobile experience and visual consistency.</p></div>
+<div class="card"><h3>Content Management and Business Tools</h3><p>Content-editing interfaces and custom business dashboards when required.</p></div>
+</div>
+<p class="note">Final features depend on the chosen package and the agreed scope.</p>
+</div></section>
+
+<section id="plans"><div class="wrap">
+<div class="head"><h2>Choose the Right Plan for Your Business</h2>
+<p class="sub">Choose a starting package, then discuss your requirements with us. The final price and delivery timeline will be confirmed after the project scope is agreed.</p></div>
+<div class="cards c4" id="planGrid"></div>
+<p class="mailnote">Your email app will open with a pre-filled enquiry. Review the details and press Send. Nothing is sent automatically, and an enquiry is not a booking or payment. If nothing opens, email <a id="altMail" href="#"></a> directly.</p>
+
+<div class="head" style="margin-top:72px"><h2>Ongoing Website Care</h2>
+<p class="sub">Maintenance is optional and separate from the one-time website development price.</p></div>
+<div class="cards c4" id="careGrid"></div>
+<p class="note">Maintenance is not automatically included in any package. Domain renewals, hosting, premium tools and third-party subscriptions are separate unless specifically agreed otherwise.</p>
+</div></section>
+
+<section id="work" class="alt"><div class="wrap">
+<div class="head"><h2>Selected Work</h2><p class="sub">Explore practical website concepts designed for real-world business needs.</p></div>
+<div class="work" id="workGrid"></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<div class="head"><h2>A Simple Process From Enquiry to Launch</h2></div>
+<ol class="steps">
+<li><div><b>Choose a Plan</b><span>Select a suitable starting package.</span></div></li>
+<li><div><b>Discuss Your Requirements</b><span>Explain your business and desired features.</span></div></li>
+<li><div><b>Confirm Scope and Price</b><span>Agree on deliverables, revisions, exclusions, timeline and payment terms.</span></div></li>
+<li><div><b>Build and Review</b><span>Develop and review the website against the agreed scope.</span></div></li>
+<li><div><b>Delivery and Handover</b><span>Delivery follows the ownership, hosting and update arrangements agreed with you.</span></div></li>
+</ol>
+<p class="note">Sending an enquiry does not create a confirmed order.</p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<div class="head"><h2>Practical Websites. Clear Communication.</h2></div>
+<ul class="why"><li>Mobile-first design</li><li>Clear package pricing</li><li>Direct communication</li><li>Scope agreed before development</li><li>Transparent exclusions</li><li>Solutions selected according to business needs</li></ul>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<div class="head"><h2>Frequently Asked Questions</h2></div>
+<div class="faq" id="faqList"></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let's Discuss Your Website</h2>
+<p class="sub">Tell us a little about your business and what you want your website to achieve.</p>
+<ul class="clist">
+<li>Email: <a id="cMail" href="#"></a></li>
+<li>Instagram: <a href="https://www.instagram.com/indian_zord/" target="_blank" rel="noopener noreferrer">@indian_zord</a></li>
+</ul>
+<a class="btn" id="cBtn" href="#">Discuss Your Project</a>
+</div></section>
+
+<section id="terms" class="terms"><div class="wrap">
+<div class="head"><h2>Terms</h2><p class="sub">A plain-language summary. Project-specific terms are confirmed in writing before work begins.</p></div>
+<h3>Scope</h3><p>Deliverables, sections, features, exclusions and timeline are agreed before work begins. Work outside the agreed scope may be quoted separately.</p>
+<h3>Revisions</h3><p>The number of revision rounds depends on the package and is stated in the written agreement. Unlimited edits are not offered.</p>
+<h3>Payment arrangements</h3><p>Prices shown are indicative ranges. The final price and payment terms are confirmed before work begins.</p>
+<h3>Ownership</h3><p>Ownership of the finished website, source files and accounts, plus hosting and update arrangements, are agreed with the client before handover.</p>
+<h3>Maintenance</h3><p>Monthly maintenance is optional, separately priced and never included automatically.</p>
+<h3>Third-party charges</h3><p>Domain registration and renewal, paid hosting, storage, databases, premium tools and other third-party services are not included unless specifically agreed in writing.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#top">Zord<span>.</span>Studio</a><p style="margin-top:8px">Mobile-friendly websites and simple business tools for local businesses and independent professionals in India.</p></div>
+<div><ul><li><a href="#services">Services</a></li><li><a href="#plans">Plans</a></li><li><a href="#work">My Work</a></li><li><a href="#contact">Contact</a></li><li><a href="#terms">Terms</a></li></ul></div>
+<div><ul><li><a id="fMail" href="#"></a></li><li><a href="https://www.instagram.com/indian_zord/" target="_blank" rel="noopener noreferrer">Instagram: @indian_zord</a></li></ul></div>
+</div>
+<div class="copy"><p>Package prices are indicative. Final scope, pricing, third-party costs and delivery timeline are confirmed before work begins.</p>
+<p style="margin:0">© <span id="yr"></span> Zord Studio. All rights reserved.</p></div>
+</div></footer>
+
+<script>
+/* ===== EDIT HERE: all site content lives in this config ===== */
+const CONFIG={
+email:"zord.studio.websites@gmail.com",
+instagram:"https://www.instagram.com/indian_zord/",
+notice:"Important: Domain registration, paid hosting and third-party service/tool charges are not included in the package price. Monthly maintenance is not included automatically and is available separately as an optional paid service.",
+plans:[
+{name:"Basic Website",price:"₹999–₹1,499",unit:"one-time",desc:"A simple, professional online presence for a small business.",
+ items:["One-page responsive website.","Business introduction and contact details.","Services and pricing section.","WhatsApp contact button.","Mobile-friendly layout.","Basic mobile testing.","One round of minor revisions."],
+ showNotice:true,fine:"Final scope and price will be confirmed before work begins.",btn:"Book Basic Plan",
+ subject:"Website Enquiry — Basic Website Plan",
+ intro:"I am interested in the Basic Website Plan (₹999–₹1,499).",
+ fields:["Business name","Business type","City","Website requirements","Existing website, if any","Preferred contact method"],
+ outro:"Please contact me so we can discuss the requirements, final price and delivery timeline."},
+{name:"Managed Website",price:"₹1,999–₹3,499",unit:"one-time",desc:"A more polished website with additional sections and design refinement.",
+ items:["Responsive business website.","More refined UI/UX and visual branding.","Agreed sections such as services, gallery, testimonials or contact.","WhatsApp and other agreed contact links.","Deployment assistance.","Domain connection assistance where applicable.","Documented process for requesting updates.","Initial bug-fix coverage as defined in the written agreement."],
+ showNotice:true,fine:"Final scope, revisions, support period and price will be agreed before work begins.",btn:"Book Managed Plan",
+ subject:"Website Enquiry — Managed Website Plan",
+ intro:"I am interested in the Managed Website Plan (₹1,999–₹3,499).",
+ fields:["Business name","Business type","City","Required website sections","Branding or design preferences","Existing website, if any","Preferred contact method"],
+ outro:"Please contact me so we can discuss the project scope, final price and delivery timeline."},
+{name:"Self-Managed Website",price:"₹3,999–₹6,999",unit:"one-time",desc:"A website with a content-editing interface for businesses that want to update agreed content themselves.",
+ items:["Responsive website.","Content-management interface for agreed content.","Ability to edit supported content such as services, prices and photos, depending on implementation.","Secure access controls where authentication is required.","Client instructions or handover guidance.","Agreed setup and testing."],
+ showNotice:false,fine:"Hosting, storage, database and third-party costs may be separate and will be specified in the final quotation.",btn:"Book Self-Managed Plan",
+ subject:"Website Enquiry — Self-Managed Website Plan",
+ intro:"I am interested in the Self-Managed Website Plan (₹3,999–₹6,999).",
+ fields:["Business name","Business type","Content I need to update","Services or products to manage","Photo or document requirements","Preferred contact method"],
+ outro:"Please contact me to discuss the content-management requirements, final price and delivery timeline."},
+{name:"Business Dashboard",price:"₹7,999–₹14,999+",unit:"project-based",desc:"Custom business-management functionality for workflows that need more than a static website.",
+ itemsHead:"Potential features, subject to the agreed scope:",
+ items:["Secure admin login.","Database integration.","Manage agreed services or products.","View and manage enquiries or appointments.","Relevant business dashboard.","Appropriate access controls.","Backup and security planning according to scope."],
+ showNotice:false,fine:"Complex bookings, payment integrations, multiple roles and advanced reporting may increase the price. Features are confirmed only in the agreed scope.",btn:"Discuss Dashboard Project",
+ subject:"Project Enquiry — Business Dashboard",
+ intro:"I would like to discuss a custom Business Dashboard project.",
+ fields:["Business name","Business type","Current business workflow","Information or records to manage","Required dashboard features","Number of staff or users, if relevant","Required integrations","Preferred contact method"],
+ outro:"Please contact me to discuss feasibility, scope, pricing and timeline."}
+],
+care:[
+{name:"No Maintenance",price:"₹0/month",items:["No recurring maintenance service.","Client manages updates independently or requests separately quoted updates."]},
+{name:"Basic Care",price:"₹299/month",items:["Defined minor content updates.","Basic website checks.","Scope and monthly limits agreed beforehand."]},
+{name:"Managed Care",price:"₹599/month",items:["A limited number of agreed content updates.","Routine website checks.","Defined support scope and response expectations."]},
+{name:"Advanced Support",price:"Custom quote",items:["For more complex websites, dashboards or ongoing support requirements."]}
+],
+work:[ /* Replace demo:"" with a live URL and source:"" with a code link when ready. */
+{name:"Local Business Website",desc:"Demo project: a one-page site concept with services, hours and WhatsApp contact.",tech:"Technologies: to be added",demo:"",source:""},
+{name:"Salon or Service Business Website",desc:"Demo project: a service-menu layout with a gallery and clear contact options.",tech:"Technologies: to be added",demo:"",source:""},
+{name:"Product or Business Landing Page",desc:"Demo project: a focused landing page with one clear call to action.",tech:"Technologies: to be added",demo:"",source:""}
+],
+faq:[
+["Are domain and hosting charges included?","Domain registration, paid hosting and third-party charges are excluded from the Basic and Managed package prices. For other packages, applicable infrastructure and service costs will be specified in the final quotation."],
+["Is monthly maintenance included?","No. Monthly maintenance is optional and separately priced."],
+["Can I request changes after delivery?","Changes depend on the package, agreed revision allowance and maintenance arrangement. Additional work may be quoted separately."],
+["Can I manage the website myself?","The Self-Managed Website package includes an agreed content-editing interface. Other packages do not automatically include a custom admin dashboard."],
+["How long will the website take?","The timeline depends on scope, content readiness and required functionality. A delivery estimate will be confirmed before the project starts."],
+["Are the displayed prices final?","No. These are indicative ranges. The final price is confirmed after requirements and scope are agreed."],
+["How do I book a plan?","Click the relevant enquiry button, review the pre-filled email, add your business details and press Send. The enquiry is not a confirmed booking until the project details are agreed."]
+]};
+
+const $=s=>document.querySelector(s);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mailto=(subject,body)=>"mailto:"+CONFIG.email+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+const planBody=p=>["Hello Zord Studio,","",p.intro,"",...p.fields.map(f=>f+":"),"",p.outro,"","Thank you."].join("\r\n");
+const ul=a=>"<ul>"+a.map(i=>"<li>"+esc(i)+"</li>").join("")+"</ul>";
+
+$("#planGrid").innerHTML=CONFIG.plans.map(p=>`<article class="card plan"><h3>${esc(p.name)}</h3>
+<p class="price">${esc(p.price)}</p><p class="unit">${esc(p.unit)}</p><p>${esc(p.desc)}</p>
+${p.itemsHead?`<h4>${esc(p.itemsHead)}</h4>`:""}${ul(p.items)}
+${p.showNotice?`<div class="warn" role="note">${esc(CONFIG.notice)}</div>`:""}
+<p class="fine">${esc(p.fine)}</p>
+<a class="btn block" href="${mailto(p.subject,planBody(p))}">${esc(p.btn)}</a></article>`).join("");
+
+$("#careGrid").innerHTML=CONFIG.care.map(c=>`<div class="card care"><h3>${esc(c.name)}</h3><p class="price">${esc(c.price)}</p>${ul(c.items)}</div>`).join("");
+
+$("#workGrid").innerHTML=CONFIG.work.map(w=>`<article class="card"><div class="shot" aria-hidden="true"><div class="ln"></div><div class="ln" style="width:75%"></div><div class="tiles" style="margin-top:14px"><i></i><i></i><i></i></div><span class="badge">Demo placeholder</span></div>
+<h3>${esc(w.name)}</h3><p>${esc(w.desc)}</p><p class="tech">${esc(w.tech)}</p>
+${w.demo?`<a class="btn ghost" href="${esc(w.demo)}" target="_blank" rel="noopener noreferrer">View Demo</a>`:`<button class="btn ghost" type="button" disabled aria-disabled="true" style="opacity:.6;cursor:not-allowed">Demo coming soon</button>`}
+${w.source?` <a href="${esc(w.source)}" target="_blank" rel="noopener noreferrer">Source code</a>`:""}</article>`).join("");
+
+$("#faqList").innerHTML=CONFIG.faq.map((f,i)=>`<h3><button type="button" aria-expanded="false" aria-controls="fa${i}" id="fq${i}">${esc(f[0])}</button></h3><div class="a" id="fa${i}" role="region" aria-labelledby="fq${i}" hidden>${esc(f[1])}</div>`).join("");
+document.querySelectorAll(".faq button").forEach(b=>b.addEventListener("click",()=>{
+ const open=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",String(!open));document.getElementById(b.getAttribute("aria-controls")).hidden=open;}));
+
+const general=mailto("Website Enquiry — Zord Studio","Hello Zord Studio,\r\n\r\nBusiness name:\r\nBusiness type:\r\nWhat I would like my website to do:\r\nPreferred contact method:\r\n\r\nThank you.");
+["#altMail","#cMail","#fMail"].forEach(s=>{const a=$(s);a.href="mailto:"+CONFIG.email;a.textContent=CONFIG.email});
+$("#cBtn").href=general;
+$("#yr").textContent=new Date().getFullYear();
+
+const nav=$("#nav"),mb=$("#menuBtn");
+const setMenu=o=>{nav.classList.toggle("open",o);mb.setAttribute("aria-expanded",String(o));mb.textContent=o?"Close":"Menu"};
+mb.addEventListener("click",()=>setMenu(!nav.classList.contains("open")));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&nav.classList.contains("open")){setMenu(false);mb.focus()}});
+</script>
+</body>
+</html>
